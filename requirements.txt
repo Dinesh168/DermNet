@@ -1,0 +1,6 @@
+numpy
+Pillow
+Pillow
+streamlit
+streamlit_option_menu
+tensorflow
