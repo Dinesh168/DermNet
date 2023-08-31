@@ -20,7 +20,7 @@ h1 {
     unsafe_allow_html=True,
 )
 
- st.markdown("<h1>DermNet</h1>", unsafe_allow_html=True)
+
 
 # Load the trained model
 model = tf.keras.models.load_model('cnn.h5')
