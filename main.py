@@ -253,13 +253,14 @@ def get_disease_info(disease_name):
             return disease
     return None
 def main():
-    logo = 'logo.png' 
-    st.image(logo, width=200)
+    
     st.markdown("<h1>DermNet</h1>", unsafe_allow_html=True)
     st.sidebar.title("Menu")
     
     # Create the custom option menu with vertical orientation in the sidebar
     with st.sidebar:
+        logo = 'logo.png' 
+        st.image(logo, width=200)
         selected_tab = option_menu(
             menu_title=None,
             options=['🏠 Home', 'ℹ️ About Us', '🔮 Prediction'],
