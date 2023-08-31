@@ -4,6 +4,17 @@ import numpy as np
 from PIL import Image
 from streamlit_option_menu import option_menu
 
+title_style = """
+    <style>
+        .title {
+            color: #FF5733;  /* Change this to your desired color */
+        }
+    </style>
+"""
+
+# Display the title with the defined style
+st.write(title_style, unsafe_allow_html=True)
+
 # Load the trained model
 model = tf.keras.models.load_model('cnn.h5')
 disease_info = [
