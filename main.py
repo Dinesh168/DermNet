@@ -366,7 +366,7 @@ def main():
         except Exception as e:
             st.error(f"An error occurred: {e}")
     elif selected_tab == '📝 About Us':
-        st.header("💫About Us")
+        st.header("📝About Us")
         st.header("Architects of Enchantment")
         st.write(
             "Behind the mystical curtain of Dermat stand three visionary architects, enchanters of code and conjurers of"
