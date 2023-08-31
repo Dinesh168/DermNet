@@ -263,7 +263,7 @@ def main():
         st.image(logo, width=200)
         selected_tab = option_menu(
             menu_title="Menu",
-            options=['🏠 Home', 'ℹ️ About Us', '🔮 Prediction'],
+            options=['🏠 Home', '📝 About Us', '🔮 Prediction'],
             default_index=0,
             orientation="vertical",
         )
@@ -365,7 +365,7 @@ def main():
                     st.write(f"<span style='color: red; font-weight;'>Nothing to worry", unsafe_allow_html=True)
         except Exception as e:
             st.error(f"An error occurred: {e}")
-    elif selected_tab == 'ℹ️ About Us':
+    elif selected_tab == '📝 About Us':
         st.header("💫About Us")
         st.header("Architects of Enchantment")
         st.write(
