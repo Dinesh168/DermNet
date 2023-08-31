@@ -4,11 +4,16 @@ import numpy as np
 from PIL import Image
 from streamlit_option_menu import option_menu
 
+st.set_page_config(
+    page_title="DermNet",
+    page_icon="🔍",
+)
+
 st.markdown(
     """
 <style>
 h1 {
-    color: #FFC6AC;
+    color: #D68D1C;
 }
 </style>
 """,
