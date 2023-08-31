@@ -8,7 +8,7 @@ st.markdown(
     """
 <style>
 h1 {
-    color: #FFDBAA;
+    color: #FFC6AC;
 }
 </style>
 """,
