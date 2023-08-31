@@ -4,13 +4,6 @@ import numpy as np
 from PIL import Image
 from streamlit_option_menu import option_menu
 
-title_style =
-    <style>
-        .title {
-            color: #FF5733;  /* Change this to your desired color */
-        }
-    </style>
-
 # Display the title with the defined style
 st.write(title_style, unsafe_allow_html=True)
 
@@ -248,7 +241,7 @@ def get_disease_info(disease_name):
     return None
 def main():
     logo = 'logo.png' 
-    st.image(logo, width=100)
+    st.image(logo, width=200,height=200)
     st.title('DermNet')
     
     # Create the custom option menu with vertical orientation in the sidebar
