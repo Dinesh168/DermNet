@@ -4,6 +4,17 @@ import numpy as np
 from PIL import Image
 from streamlit_option_menu import option_menu
 
+st.markdown(
+    """
+<style>
+h1 {
+    color: #FFDBAA;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
 # Load the trained model
 model = tf.keras.models.load_model('cnn.h5')
 disease_info = [
@@ -239,7 +250,7 @@ def get_disease_info(disease_name):
 def main():
     logo = 'logo.png' 
     st.image(logo, width=200)
-    st.title('DermNet')
+    st.markdown("<h1>DermNet</h1>", unsafe_allow_html=True)
     st.sidebar.title("Menu")
     
     # Create the custom option menu with vertical orientation in the sidebar
