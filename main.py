@@ -240,11 +240,12 @@ def main():
     logo = 'logo.png' 
     st.image(logo, width=200)
     st.title('DermNet')
+    st.sidebar.title("Menu")
     
     # Create the custom option menu with vertical orientation in the sidebar
     with st.sidebar:
         selected_tab = option_menu(
-            menu_title="Main menu",
+            # menu_title="Main menu",
             options=['🏠 Home', 'ℹ️ About Us', '🔮 Prediction'],
             default_index=0,
             orientation="vertical",
