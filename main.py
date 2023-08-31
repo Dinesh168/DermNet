@@ -238,7 +238,7 @@ def get_disease_info(disease_name):
     return None
 def main():
     logo = 'logo.png' 
-    st.image(logo, width=200,height=200)
+    st.image(logo, width=200)
     st.title('DermNet')
     
     # Create the custom option menu with vertical orientation in the sidebar
