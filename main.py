@@ -253,14 +253,11 @@ def get_disease_info(disease_name):
             return disease
     return None
 def main():
-    
-    st.markdown("<h1>DermNet</h1>", unsafe_allow_html=True)
-    st.sidebar.title("Menu")
-    
     # Create the custom option menu with vertical orientation in the sidebar
     with st.sidebar:
+        st.markdown("<h1>DermNet</h1>", unsafe_allow_html=True)
         logo = 'logo.png' 
-        st.image(logo, width=200)
+        st.image(logo, width=50)
         selected_tab = option_menu(
             menu_title=None,
             options=['🏠 Home', 'ℹ️ About Us', '🔮 Prediction'],
@@ -283,9 +280,6 @@ def main():
     # Handle navigation based on selected tab
     if selected_tab == '🏠 Home':
         st.header("Embrace Radiant Skin with Dermnet: Your Skin Wisard")
-
-       
-    
         st.write(
             "Step into the world of Dermnet, where enchantment meets precision in skin diagnosis. A wondrous fusion of cutting-edge"
             " technology and the art of dermatology, Dermat is your steadfast companion on your journey to unveil the secrets"
@@ -375,7 +369,7 @@ def main():
             " very fabric of this realm."
         )
     
-        st.write("## Meet the Architects of Dermat")
+        st.write("## Meet the Architects of DermNet")
         st.markdown(
             "🔮 **Dinesh R:** A sorcerer with a fervor for machine learning, Dinesh weaves intricate spells of algorithms and"
             " data science. Currently embarking on a journey through the realms of 2nd year MCA at Christ (Deemed to be University),"
