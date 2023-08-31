@@ -255,9 +255,9 @@ def get_disease_info(disease_name):
 def main():
     # Create the custom option menu with vertical orientation in the sidebar
     with st.sidebar:
-        st.markdown("<h1>DermNet</h1>", unsafe_allow_html=True)
         logo = 'logo.png' 
-        st.image(logo, width=50)
+        st.image(logo, width=100)
+        st.markdown("<h1>DermNet</h1>", unsafe_allow_html=True)
         selected_tab = option_menu(
             menu_title=None,
             options=['🏠 Home', 'ℹ️ About Us', '🔮 Prediction'],
@@ -279,6 +279,7 @@ def main():
 
     # Handle navigation based on selected tab
     if selected_tab == '🏠 Home':
+        st.title("🏠 Home")
         st.header("Embrace Radiant Skin with Dermnet: Your Skin Wisard")
         st.write(
             "Step into the world of Dermnet, where enchantment meets precision in skin diagnosis. A wondrous fusion of cutting-edge"
@@ -332,7 +333,7 @@ def main():
         )
       
     elif selected_tab == '🔮 Prediction':
-        st.header("Image Classification Prediction")
+        st.header("🔮Skin Disease prediction")
         image = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
         try:
             if image is not None:
