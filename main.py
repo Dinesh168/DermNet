@@ -243,6 +243,7 @@ def main():
     selected_tab = option_menu(
         menu_title = "Main menu",
         options = ['🏠 Home','ℹ️ About Us','🔮 Prediction'],
+        default_index=0,
     orientation="horizontal",
     )
     # st.markdown(
