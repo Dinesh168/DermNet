@@ -243,7 +243,7 @@ def main():
     st.sidebar.title("Dermat Sidebar Menu")
     
     # Create the custom option menu with vertical orientation in the sidebar
-    selected_tab = st.sidebar.option_menu(
+    selected_tab = option_menu(
         menu_title="Main menu",
         options=['🏠 Home', 'ℹ️ About Us', '🔮 Prediction'],
         default_index=0,
