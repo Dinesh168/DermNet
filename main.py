@@ -244,7 +244,7 @@ def main():
         menu_title = "Main menu",
         options = ['🏠 Home','ℹ️ About Us','🔮 Prediction'],
         default_index=0,
-    orientation="horizontal",
+    orientation="vertical",
     )
     # st.markdown(
     #     """
