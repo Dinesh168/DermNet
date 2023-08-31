@@ -20,6 +20,8 @@ h1 {
     unsafe_allow_html=True,
 )
 
+ st.markdown("<h1>DermNet</h1>", unsafe_allow_html=True)
+
 # Load the trained model
 model = tf.keras.models.load_model('cnn.h5')
 disease_info = [
@@ -256,10 +258,9 @@ def main():
     # Create the custom option menu with vertical orientation in the sidebar
     with st.sidebar:
         logo = 'logo.png' 
-        st.image(logo, width=100)
-        st.markdown("<h1>DermNet</h1>", unsafe_allow_html=True)
+        st.image(logo, width=200)
         selected_tab = option_menu(
-            menu_title=None,
+            menu_title="Menu",
             options=['🏠 Home', 'ℹ️ About Us', '🔮 Prediction'],
             default_index=0,
             orientation="vertical",
