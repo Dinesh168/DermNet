@@ -15,6 +15,7 @@ st.markdown(
 h1 {
     color: #D68D1C;
 }
+titke
 </style>
 """,
     unsafe_allow_html=True,
@@ -281,7 +282,7 @@ def main():
 
     # Handle navigation based on selected tab
     if selected_tab == '🏠 Home':
-        st.title("🏠 Home")
+        st.header("🏠 Home")
         st.header("Embrace Radiant Skin with Dermnet: Your Skin Wisard")
         st.write(
             "Step into the world of Dermnet, where enchantment meets precision in skin diagnosis. A wondrous fusion of cutting-edge"
@@ -335,7 +336,7 @@ def main():
         )
       
     elif selected_tab == '🔮 Prediction':
-        st.header("🔮Skin Disease prediction")
+        st.header("🔮Prediction")
         image = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
         try:
             if image is not None:
@@ -365,7 +366,8 @@ def main():
         except Exception as e:
             st.error(f"An error occurred: {e}")
     elif selected_tab == 'ℹ️ About Us':
-        st.header("About Us: Architects of Enchantment")
+        st.header("About Us")
+        st.header("Architects of Enchantment")
         st.write(
             "Behind the mystical curtain of Dermat stand three visionary architects, enchanters of code and conjurers of"
             " machine learning. Allow us to introduce the masterminds who have woven their dreams and aspirations into the"
