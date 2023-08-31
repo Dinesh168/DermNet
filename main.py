@@ -245,7 +245,7 @@ def main():
     # Create the custom option menu with vertical orientation in the sidebar
     with st.sidebar:
         selected_tab = option_menu(
-            # menu_title="Main menu",
+            menu_title=None,
             options=['🏠 Home', 'ℹ️ About Us', '🔮 Prediction'],
             default_index=0,
             orientation="vertical",
