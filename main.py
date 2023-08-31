@@ -364,7 +364,7 @@ def main():
                     st.write(f"<span style='color: red; font-weight;'>Nothing to worry", unsafe_allow_html=True)
         except Exception as e:
             st.error(f"An error occurred: {e}")
-        elif selected_tab == 'ℹ️ About Us':
+    elif selected_tab == 'ℹ️ About Us':
         st.header("About Us: Architects of Enchantment")
         st.write(
             "Behind the mystical curtain of Dermat stand three visionary architects, enchanters of code and conjurers of"
